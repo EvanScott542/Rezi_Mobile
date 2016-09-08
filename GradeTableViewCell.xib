@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6250" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" shouldIndentWhileEditing="NO" reuseIdentifier="GradeTableViewCell" id="140-qP-vJb" customClass="GradeTableViewCell" customModule="Rezi_Mobile" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="78"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="140-qP-vJb" id="8cu-pe-1Sv">
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" wraps="YES" value="12" minimumValue="6" maximumValue="12" translatesAutoresizingMaskIntoConstraints="NO" id="yOc-dG-3ss">
+                        <rect key="frame" x="-47" y="-14" width="94" height="29"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="yOc-dG-3ss" secondAttribute="height" multiplier="94:29" id="zhs-ui-1up"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="zhs-ui-1up"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="zhs-ui-1up"/>
+                            </mask>
+                        </variation>
+                        <connections>
+                            <action selector="stepperValueChanged:" destination="140-qP-vJb" eventType="valueChanged" id="A98-st-fRG"/>
+                        </connections>
+                    </stepper>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What grade are the students in?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RJ5-HL-eUd">
+                        <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="RJ5-HL-eUd" secondAttribute="height" multiplier="69:7" id="IJb-Wu-vH2">
+                                <variation key="heightClass=regular-widthClass=compact" constant="-2.6428571428571672"/>
+                            </constraint>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="IJb-Wu-vH2"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="IJb-Wu-vH2"/>
+                            </mask>
+                        </variation>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G9t-T0-ZIP">
+                        <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="G9t-T0-ZIP" secondAttribute="height" multiplier="9:7" id="EzN-Bi-WWg"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="EzN-Bi-WWg"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
+                            <rect key="frame" x="237" y="44" width="26" height="20"/>
+                            <mask key="constraints">
+                                <include reference="EzN-Bi-WWg"/>
+                            </mask>
+                        </variation>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="centerX" secondItem="RJ5-HL-eUd" secondAttribute="centerX" id="GHE-Cg-3jO"/>
+                    <constraint firstItem="yOc-dG-3ss" firstAttribute="top" secondItem="RJ5-HL-eUd" secondAttribute="bottom" constant="11" id="IFy-FQ-2WC">
+                        <variation key="heightClass=regular-widthClass=compact" constant="8.5"/>
+                    </constraint>
+                    <constraint firstItem="yOc-dG-3ss" firstAttribute="leading" secondItem="8cu-pe-1Sv" secondAttribute="leading" constant="58" id="IfY-C2-GEC"/>
+                    <constraint firstAttribute="bottom" secondItem="G9t-T0-ZIP" secondAttribute="bottom" constant="12.5" id="Mhz-3z-hSS">
+                        <variation key="heightClass=regular-widthClass=compact" constant="13"/>
+                    </constraint>
+                    <constraint firstItem="RJ5-HL-eUd" firstAttribute="top" secondItem="8cu-pe-1Sv" secondAttribute="top" constant="8" id="QLP-J8-wRE"/>
+                    <constraint firstAttribute="trailing" secondItem="G9t-T0-ZIP" secondAttribute="trailing" constant="56" id="RtN-ph-3mb">
+                        <variation key="heightClass=regular-widthClass=compact" constant="57.5"/>
+                    </constraint>
+                    <constraint firstAttribute="bottom" secondItem="yOc-dG-3ss" secondAttribute="bottom" constant="8.5" id="ZfR-VR-0eY"/>
+                    <constraint firstItem="RJ5-HL-eUd" firstAttribute="leading" secondItem="8cu-pe-1Sv" secondAttribute="leading" constant="57" id="hPC-Of-g3Q">
+                        <variation key="heightClass=regular-widthClass=compact" constant="46"/>
+                    </constraint>
+                    <constraint firstItem="G9t-T0-ZIP" firstAttribute="top" secondItem="RJ5-HL-eUd" secondAttribute="bottom" constant="15" id="mII-Zp-YyK">
+                        <variation key="heightClass=regular-widthClass=compact" constant="12.5"/>
+                    </constraint>
+                </constraints>
+                <variation key="default">
+                    <mask key="subviews">
+                        <exclude reference="yOc-dG-3ss"/>
+                        <exclude reference="RJ5-HL-eUd"/>
+                        <exclude reference="G9t-T0-ZIP"/>
+                    </mask>
+                    <mask key="constraints">
+                        <exclude reference="Mhz-3z-hSS"/>
+                        <exclude reference="RtN-ph-3mb"/>
+                        <exclude reference="mII-Zp-YyK"/>
+                        <exclude reference="GHE-Cg-3jO"/>
+                        <exclude reference="QLP-J8-wRE"/>
+                        <exclude reference="hPC-Of-g3Q"/>
+                        <exclude reference="IFy-FQ-2WC"/>
+                        <exclude reference="IfY-C2-GEC"/>
+                        <exclude reference="ZfR-VR-0eY"/>
+                    </mask>
+                </variation>
+                <variation key="heightClass=regular-widthClass=compact">
+                    <mask key="subviews">
+                        <include reference="yOc-dG-3ss"/>
+                        <include reference="RJ5-HL-eUd"/>
+                        <include reference="G9t-T0-ZIP"/>
+                    </mask>
+                    <mask key="constraints">
+                        <include reference="Mhz-3z-hSS"/>
+                        <include reference="RtN-ph-3mb"/>
+                        <include reference="mII-Zp-YyK"/>
+                        <include reference="GHE-Cg-3jO"/>
+                        <include reference="QLP-J8-wRE"/>
+                        <include reference="hPC-Of-g3Q"/>
+                        <include reference="IFy-FQ-2WC"/>
+                        <include reference="IfY-C2-GEC"/>
+                        <include reference="ZfR-VR-0eY"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="gradeLabel" destination="G9t-T0-ZIP" id="jKY-1C-Kq4"/>
+                <outlet property="promptThree" destination="RJ5-HL-eUd" id="Jud-ep-Efu"/>
+                <outlet property="stepper" destination="yOc-dG-3ss" id="bVl-ZE-EcM"/>
+            </connections>
+            <point key="canvasLocation" x="182" y="557.5"/>
+        </tableViewCell>
+    </objects>
+</document>

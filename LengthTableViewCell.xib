@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6250" systemVersion="14C68k" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" shouldIndentWhileEditing="NO" reuseIdentifier="LengthTableViewCell" id="jjt-Ma-wK3" customClass="LengthTableViewCell" customModule="Rezi_Mobile" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="319" height="78"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="jjt-Ma-wK3" id="4Um-Ky-iWC">
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How long has this been going on?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i5S-56-tDr">
+                        <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="i5S-56-tDr" secondAttribute="height" multiplier="220:21" id="DrY-z8-Cqu"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="DrY-z8-Cqu"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="DrY-z8-Cqu"/>
+                            </mask>
+                        </variation>
+                    </label>
+                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jQo-h0-42U">
+                        <rect key="frame" x="0.0" y="-30" width="97" height="30"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="jQo-h0-42U" secondAttribute="height" multiplier="209:30" id="RbY-hU-HNn"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES"/>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="RbY-hU-HNn"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="RbY-hU-HNn"/>
+                            </mask>
+                        </variation>
+                        <connections>
+                            <action selector="cancel:" destination="jjt-Ma-wK3" eventType="touchCancel" id="c25-hg-u8G"/>
+                        </connections>
+                    </textField>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="centerX" secondItem="i5S-56-tDr" secondAttribute="centerX" id="2x0-Lt-opV"/>
+                    <constraint firstItem="i5S-56-tDr" firstAttribute="top" secondItem="4Um-Ky-iWC" secondAttribute="top" constant="8" id="36W-0h-L2v"/>
+                    <constraint firstItem="jQo-h0-42U" firstAttribute="top" secondItem="i5S-56-tDr" secondAttribute="bottom" constant="11" id="ZBw-c9-hui">
+                        <variation key="heightClass=regular-widthClass=compact" constant="8"/>
+                    </constraint>
+                    <constraint firstItem="jQo-h0-42U" firstAttribute="leading" secondItem="4Um-Ky-iWC" secondAttribute="leading" constant="55" id="iZ7-6O-aMV"/>
+                    <constraint firstItem="i5S-56-tDr" firstAttribute="leading" secondItem="4Um-Ky-iWC" secondAttribute="leading" constant="49" id="qyP-dm-jic"/>
+                    <constraint firstAttribute="centerX" secondItem="jQo-h0-42U" secondAttribute="centerX" id="tly-KU-DW0"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="subviews">
+                        <exclude reference="i5S-56-tDr"/>
+                        <exclude reference="jQo-h0-42U"/>
+                    </mask>
+                    <mask key="constraints">
+                        <exclude reference="2x0-Lt-opV"/>
+                        <exclude reference="36W-0h-L2v"/>
+                        <exclude reference="qyP-dm-jic"/>
+                        <exclude reference="ZBw-c9-hui"/>
+                        <exclude reference="iZ7-6O-aMV"/>
+                        <exclude reference="tly-KU-DW0"/>
+                    </mask>
+                </variation>
+                <variation key="heightClass=regular-widthClass=compact">
+                    <mask key="subviews">
+                        <include reference="i5S-56-tDr"/>
+                        <include reference="jQo-h0-42U"/>
+                    </mask>
+                    <mask key="constraints">
+                        <include reference="2x0-Lt-opV"/>
+                        <include reference="36W-0h-L2v"/>
+                        <include reference="qyP-dm-jic"/>
+                        <include reference="ZBw-c9-hui"/>
+                        <include reference="iZ7-6O-aMV"/>
+                        <include reference="tly-KU-DW0"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="lengthLabel" destination="i5S-56-tDr" id="eVw-Sd-Bet"/>
+                <outlet property="lengthTextField" destination="jQo-h0-42U" id="Gm9-MP-Awl"/>
+            </connections>
+            <point key="canvasLocation" x="227.5" y="333"/>
+        </tableViewCell>
+    </objects>
+</document>

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6254" systemVersion="14C68k" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" shouldIndentWhileEditing="NO" reuseIdentifier="anonymousTableViewCell" id="0s6-2x-amY" customClass="anonymousTableViewCell" customModule="Rezi_Mobile" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="98"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="0s6-2x-amY" id="eBq-pN-hsG">
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Do you want to report this anonymously?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KIQ-HL-2Cb">
+                        <rect key="frame" x="131" y="8" width="57" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="KIQ-HL-2Cb" secondAttribute="height" multiplier="19:7" id="mDU-Dl-wGz">
+                                <variation key="heightClass=regular-widthClass=compact" constant="244"/>
+                            </constraint>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="mDU-Dl-wGz"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="mDU-Dl-wGz"/>
+                            </mask>
+                        </variation>
+                    </label>
+                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="iOH-Ga-CWm">
+                        <rect key="frame" x="135" y="37" width="51" height="31"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="iOH-Ga-CWm" secondAttribute="height" multiplier="49:31" id="apH-ZZ-a4B"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="apH-ZZ-a4B"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="apH-ZZ-a4B"/>
+                            </mask>
+                        </variation>
+                    </switch>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="iOH-Ga-CWm" firstAttribute="leading" secondItem="eBq-pN-hsG" secondAttribute="leading" constant="135" id="7Uj-Ds-Fpe">
+                        <variation key="heightClass=regular-widthClass=compact" constant="136"/>
+                    </constraint>
+                    <constraint firstItem="KIQ-HL-2Cb" firstAttribute="leading" secondItem="eBq-pN-hsG" secondAttribute="leading" constant="131" id="9RZ-OQ-rA3">
+                        <variation key="heightClass=regular-widthClass=compact" constant="6"/>
+                    </constraint>
+                    <constraint firstAttribute="centerX" secondItem="KIQ-HL-2Cb" secondAttribute="centerX" id="Kki-DW-Xsp">
+                        <variation key="heightClass=regular-widthClass=compact" constant="-0.5"/>
+                    </constraint>
+                    <constraint firstItem="iOH-Ga-CWm" firstAttribute="top" secondItem="KIQ-HL-2Cb" secondAttribute="bottom" constant="8" id="TwZ-Cq-cMO">
+                        <variation key="heightClass=regular-widthClass=compact" constant="9"/>
+                    </constraint>
+                    <constraint firstItem="KIQ-HL-2Cb" firstAttribute="top" secondItem="eBq-pN-hsG" secondAttribute="top" constant="8" id="hPS-QT-vlD">
+                        <variation key="heightClass=regular-widthClass=compact" constant="1"/>
+                    </constraint>
+                    <constraint firstItem="iOH-Ga-CWm" firstAttribute="top" secondItem="KIQ-HL-2Cb" secondAttribute="bottom" constant="8" id="k8K-0r-mmP"/>
+                    <constraint firstAttribute="centerX" secondItem="iOH-Ga-CWm" secondAttribute="centerX" id="piz-hX-Qdh"/>
+                    <constraint firstItem="iOH-Ga-CWm" firstAttribute="top" secondItem="KIQ-HL-2Cb" secondAttribute="bottom" constant="8" id="u6p-n4-1VS">
+                        <variation key="heightClass=regular-widthClass=compact" constant="17"/>
+                    </constraint>
+                </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="9RZ-OQ-rA3"/>
+                        <exclude reference="Kki-DW-Xsp"/>
+                        <exclude reference="hPS-QT-vlD"/>
+                        <exclude reference="7Uj-Ds-Fpe"/>
+                        <exclude reference="TwZ-Cq-cMO"/>
+                        <exclude reference="k8K-0r-mmP"/>
+                        <exclude reference="piz-hX-Qdh"/>
+                        <exclude reference="u6p-n4-1VS"/>
+                    </mask>
+                </variation>
+                <variation key="heightClass=regular-widthClass=compact">
+                    <mask key="constraints">
+                        <include reference="9RZ-OQ-rA3"/>
+                        <include reference="Kki-DW-Xsp"/>
+                        <include reference="hPS-QT-vlD"/>
+                        <include reference="7Uj-Ds-Fpe"/>
+                        <exclude reference="TwZ-Cq-cMO"/>
+                        <include reference="k8K-0r-mmP"/>
+                        <include reference="piz-hX-Qdh"/>
+                        <exclude reference="u6p-n4-1VS"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="anonymousLabel" destination="KIQ-HL-2Cb" id="66w-9t-8tS"/>
+                <outlet property="anonymousSwitch" destination="iOH-Ga-CWm" id="9Lh-cm-ZA3"/>
+            </connections>
+            <point key="canvasLocation" x="182.75" y="875"/>
+        </tableViewCell>
+    </objects>
+</document>
